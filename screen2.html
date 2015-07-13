@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/screen2.css">
+        <script type='application/javascript' src='js/fastclick.js'></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div>r<span>Hybrid</span></div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <p class="wrapper">
+                    Show a side menu using native animations.
+                </p>
+            </div>
+        </div>
+        <input id="menu" type="button" value="Show Menu">
+    </body>
+    <script>
+        
+        if ('addEventListener' in document) {
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+            document.getElementById('header').addEventListener('click', function() {
+                Rhy.popScreen();
+            }, false);
+            document.getElementById('menu').addEventListener('click', function() {
+                Rhy.createMenu('menu.html', 'option1.html', '3.0rem');
+            }, false);
+
+        } 
+        
+    </script>
+</html>
+

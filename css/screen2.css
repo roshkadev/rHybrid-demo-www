@@ -1,0 +1,13 @@
+body {
+    background-color: #FF6666;
+}
+
+input[type="button"] {
+    color: #FF6666;
+}
+#header {
+    background-image: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 1rem center;
+}

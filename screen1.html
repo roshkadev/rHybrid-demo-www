@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/screen1.css">
+        <script type='application/javascript' src='js/fastclick.js'></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div id="header-title">r<span>Hybrid</span></div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <p class="wrapper">
+                    A hybrid app framework.
+                    <br><br>
+                    Use native navigation in hybrid apps and
+                    write once and run on both Android and iOS.<br>
+                </p>
+            </div>
+        </div>
+        <input id="next" type="button" value="Go">
+    </body>
+    <script>
+        
+        if ('addEventListener' in document) {
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+
+            document.getElementById('next').addEventListener('click', function() {
+                Rhy.newScreen('screen2.html');
+            }, false);
+
+        } 
+        
+    </script>
+</html>

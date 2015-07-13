@@ -1,0 +1,13 @@
+body {
+    background-color: #FF6666;
+}
+
+#header {
+    background-image: url('../img/menu.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 0.5rem center;
+}
+ul {
+    text-align: left;
+}
